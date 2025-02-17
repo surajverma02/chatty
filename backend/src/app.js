@@ -11,8 +11,6 @@ const logger = require("./lib/logger");
 const { server, app } = require("./lib/socket");
 
 const path = require("path");
-
-const __dirname = path.resolve();
 const PORT = process.env.PORT || 5001;
 
 app.use(express.json({ limit: "10mb" }));
